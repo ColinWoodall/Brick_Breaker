@@ -1,0 +1,48 @@
+:root{
+    --hot-pink: #F72585;
+    --dark-pink: #B5179E;
+    --light-purple: #7209B7;
+    --deep-purple: #560BAD;
+    --violet: #480CA8;
+    --dark-blue: #3A0CA3;
+    --blue: #3F37C9;
+    --light-blue: #4361EE;
+    --sky-blue: #4895EF;
+    --aqua: #4CC9F0;
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+.grid {
+    position: absolute;
+    width: 565px;
+    height: 300px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.block{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: #4361EE;
+}
+
+.user {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: var(--hot-pink);
+}
+
+.ball{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--deep-purple);
