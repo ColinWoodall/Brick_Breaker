@@ -93,14 +93,6 @@ function moveUser(e){
     }
 }
 
-function mouseMoveHandler(e) {
-    const relativeX = e.clientX - canvas.offsetLeft;
-    if (relativeX > 0 && relativeX < boardWidth) {
-        paddleX = relativeX - paddleWidth / 2;
-    }
-}
-
-document.addEventListener("mousemove", mouseMoveHandler, false);
 document.addEventListener('keydown', moveUser)
 
 //add ball
@@ -117,7 +109,7 @@ function moveBall(){
     checkCollisions()
 }
 
-timerId = setInterval(moveBall, 30)
+timerId = setInterval(moveBall, 20)
 
 //check for collisions
 function checkCollisions(){
